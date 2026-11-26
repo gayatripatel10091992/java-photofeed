@@ -2,6 +2,7 @@ package com.gayatripatel.photofeed;
 
 import android.app.Application;
 import android.content.Intent;
+import android.view.View;
 import android.widget.EditText;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.core.app.ApplicationProvider;
@@ -52,8 +53,10 @@ public class ScreenshotTest {
         MainActivity a = Robolectric.buildActivity(MainActivity.class, main("feed")).setup().get();
         Screenshots.layout(a);
         RecyclerView feed = a.findViewById(R.id.feed);
-        // Second post (liked and saved) at the top: position 0 is the stories row.
-        ((androidx.recyclerview.widget.LinearLayoutManager) feed.getLayoutManager()).scrollToPositionWithOffset(2, 0);
+        // Like and save the first post the way a user would: tap the heart and the bookmark.
+        View post = feed.findViewHolderForAdapterPosition(1).itemView;
+        post.findViewById(R.id.like).performClick();
+        post.findViewById(R.id.save).performClick();
         Screenshots.layout(a);
         Screenshots.capture(a, "03_liked_and_saved");
     }
