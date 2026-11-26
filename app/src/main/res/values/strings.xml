@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoFeed</string>
+    <string name="home">Home</string>
+    <string name="create">New post</string>
+    <string name="profile">Profile</string>
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="more">More</string>
+    <string name="your_story">Your story</string>
+    <string name="view_comments">View all %1$d comments</string>
+    <string name="comments">Comments</string>
+    <string name="add_comment">Add a comment…</string>
+    <string name="post">Post</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="share_profile">Share profile</string>
+    <string name="caption_hint">Write a caption… use #tags and @mentions</string>
+    <string name="location_hint">Add location</string>
+    <string name="pick_photo">Tap to choose a photo</string>
+    <string name="tags_preview">Tags: %1$s</string>
+    <string name="back">Back</string>
+    <string name="verified">Verified</string>
+    <string name="end_of_feed">You\'re all caught up</string>
+    <string name="decoded_info">Decoded at %1$d×%2$d (inSampleSize %3$d) · %4$s instead of %5$s</string>
+</resources>

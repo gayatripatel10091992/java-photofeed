@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="like_red">#ED4956</color>
+    <color name="link_light">#00376B</color>
+    <color name="link_dark">#E0F1FF</color>
+    <color name="story_a">#FEDA75</color>
+    <color name="story_b">#FA7E1E</color>
+    <color name="story_c">#D62976</color>
+    <color name="story_d">#962FBF</color>
+    <color name="seen_ring">#C7C7CC</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PhotoFeed" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#0095F6</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="colorOnSurface">#0F0F0F</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="pfLinkColor">@color/link_light</item>
+    </style>
+
+    <attr name="pfLinkColor" format="color" />
+
+    <style name="ShapeAppearance.PhotoFeed.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ProfileStat">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+    </style>
+</resources>
