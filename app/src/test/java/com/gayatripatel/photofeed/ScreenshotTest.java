@@ -50,8 +50,11 @@ public class ScreenshotTest {
     @Test
     public void likedAndSavedPost() {
         MainActivity a = Robolectric.buildActivity(MainActivity.class, main("feed")).setup().get();
+        Screenshots.layout(a);
         RecyclerView feed = a.findViewById(R.id.feed);
+        // Second post (liked and saved) at the top: position 0 is the stories row.
         ((androidx.recyclerview.widget.LinearLayoutManager) feed.getLayoutManager()).scrollToPositionWithOffset(2, 0);
+        Screenshots.layout(a);
         Screenshots.capture(a, "03_liked_and_saved");
     }
 

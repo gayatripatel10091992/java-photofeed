@@ -20,6 +20,18 @@ public final class Screenshots {
     private Screenshots() {
     }
 
+    /** Measures and lays out the window at screen size without saving, e.g. before scrolling a list. */
+    public static void layout(Activity activity) {
+        shadowOf(Looper.getMainLooper()).idle();
+        View root = activity.getWindow().getDecorView();
+        DisplayMetrics dm = activity.getResources().getDisplayMetrics();
+        root.measure(
+                View.MeasureSpec.makeMeasureSpec(dm.widthPixels, View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(dm.heightPixels, View.MeasureSpec.EXACTLY));
+        root.layout(0, 0, dm.widthPixels, dm.heightPixels);
+        shadowOf(Looper.getMainLooper()).idle();
+    }
+
     public static void capture(Activity activity, String name) {
         shadowOf(Looper.getMainLooper()).idle();
         View root = activity.getWindow().getDecorView();
